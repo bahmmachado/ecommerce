@@ -1,0 +1,22 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: docker login
+      run: docker login -u bahmmachado -p dckr_pat_XRs7Wxhcg1bugC34tdAF9xvqqUw
+    - name: build image
+      run: docker build -t bahmmachado/ecommerce .
+    - name: push to docker
+      run: docker push bahmmachado/ecommerce
