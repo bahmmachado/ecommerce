@@ -1,4 +1,4 @@
-package com.github.matheus22003.ecommerce;
+package com.github.bahmmachado.ecommerce;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

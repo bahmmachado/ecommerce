@@ -1,4 +1,4 @@
-package com.github.matheus22003.ecommerce;
+package com.github.bahmmachado.ecommerce;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

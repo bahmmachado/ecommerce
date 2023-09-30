@@ -1,4 +1,4 @@
-package com.github.matheus22003.ecommerce.controller;
+package com.github.bahmmachado.ecommerce.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
