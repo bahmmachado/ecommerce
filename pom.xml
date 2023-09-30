@@ -8,7 +8,7 @@
 		<version>2.7.16</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.github.bahmmachado</groupId>
+	<groupId>com.github.matheus22003</groupId>
 	<artifactId>ECOMMERCE</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
@@ -53,8 +53,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
-		
 	</dependencies>
 
 	<build>

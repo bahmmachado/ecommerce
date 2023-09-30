@@ -1,4 +1,4 @@
-package com.github.bahmmachado.ecommerce;
+package com.github.matheus22003.ecommerce;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
