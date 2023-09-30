@@ -23,14 +23,14 @@ jobs:
       uses: docker/login-action@v2
       with:
         registry: https://index.docker.io/v1/
-        username: ${{ secrets.AzureAppService_ContainerUsername_f1498979585c4a0e9abe4eb522c01a2e }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_0a38d51b21ff4ad4b962b0ed92190008 }}
+        username: ${{ secrets.AzureAppService_ContainerUsername_482f477324b54247ab7e4298590433bc }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_84677492c4b941ba8c9114ed6b51c666 }}
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_f1498979585c4a0e9abe4eb522c01a2e }}/ecommerce:${{ github.sha }}
+        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_482f477324b54247ab7e4298590433bc }}/ecommerce:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -47,5 +47,5 @@ jobs:
       with:
         app-name: 'rm87088-ECOMMERCE-DEV'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_cbade6d9257b4f0699d7616ceeb0b407 }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_f1498979585c4a0e9abe4eb522c01a2e }}/ecommerce:${{ github.sha }}'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_5ffcf520d8a04a0dbe3a4f595b9d77c7 }}
+        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_482f477324b54247ab7e4298590433bc }}/ecommerce:${{ github.sha }}'
